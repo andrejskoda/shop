@@ -13,11 +13,11 @@ import javax.persistence.Table;
 @Table(name = "people")
 @NamedQueries({
     @NamedQuery(
-        name = "com.example.helloworld.core.Person.findAll",
+        name = "com.skoda.dropwizard.shop.core.Person.findAll",
         query = "SELECT p FROM Person p"
     ),
     @NamedQuery(
-        name = "com.example.helloworld.core.Person.findById",
+        name = "com.skoda.dropwizard.shop.core.Person.findById",
         query = "SELECT p FROM Person p WHERE p.id = :id"
     )
 })
