@@ -1,4 +1,4 @@
-package com.skoda.andy.shop.resources;
+package com.skoda.dropwizard.shop.resources;
 
 import io.dropwizard.hibernate.UnitOfWork;
 
@@ -10,8 +10,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.skoda.andy.shop.core.Person;
-import com.skoda.andy.shop.db.PersonDAO;
+import com.skoda.dropwizard.shop.core.Person;
+import com.skoda.dropwizard.shop.db.PersonDAO;
 
 @Path("/people")
 @Produces(MediaType.APPLICATION_JSON)

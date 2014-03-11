@@ -1,8 +1,8 @@
-package com.skoda.andy.shop.views;
+package com.skoda.dropwizard.shop.views;
 
 import io.dropwizard.views.View;
 
-import com.skoda.andy.shop.core.Person;
+import com.skoda.dropwizard.shop.core.Person;
 
 public class PersonView extends View {
     private final Person person;

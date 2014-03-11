@@ -1,4 +1,4 @@
-package com.skoda.andy.shop.resources;
+package com.skoda.dropwizard.shop.resources;
 
 import io.dropwizard.hibernate.UnitOfWork;
 import io.dropwizard.jersey.params.LongParam;
@@ -10,9 +10,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import com.google.common.base.Optional;
-import com.skoda.andy.shop.core.Person;
-import com.skoda.andy.shop.db.PersonDAO;
-import com.skoda.andy.shop.views.PersonView;
+import com.skoda.dropwizard.shop.core.Person;
+import com.skoda.dropwizard.shop.db.PersonDAO;
+import com.skoda.dropwizard.shop.views.PersonView;
 import com.sun.jersey.api.NotFoundException;
 
 @Path("/people/{personId}")

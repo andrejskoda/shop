@@ -1,4 +1,4 @@
-package com.skoda.andy.shop;
+package com.skoda.dropwizard.shop;
 
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
@@ -9,10 +9,10 @@ import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import io.dropwizard.views.ViewBundle;
 
-import com.skoda.andy.shop.core.Person;
-import com.skoda.andy.shop.db.PersonDAO;
-import com.skoda.andy.shop.resources.PeopleResource;
-import com.skoda.andy.shop.resources.PersonResource;
+import com.skoda.dropwizard.shop.core.Person;
+import com.skoda.dropwizard.shop.db.PersonDAO;
+import com.skoda.dropwizard.shop.resources.PeopleResource;
+import com.skoda.dropwizard.shop.resources.PersonResource;
 
 public class ShopApplication extends Application<ShopConfiguration> {
 

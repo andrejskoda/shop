@@ -1,4 +1,4 @@
-package com.skoda.andy.shop.db;
+package com.skoda.dropwizard.shop.db;
 
 import io.dropwizard.hibernate.AbstractDAO;
 
@@ -7,7 +7,7 @@ import java.util.List;
 import org.hibernate.SessionFactory;
 
 import com.google.common.base.Optional;
-import com.skoda.andy.shop.core.Person;
+import com.skoda.dropwizard.shop.core.Person;
 
 public class PersonDAO extends AbstractDAO<Person> {
     public PersonDAO(SessionFactory factory) {

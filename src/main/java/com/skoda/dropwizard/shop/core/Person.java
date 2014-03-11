@@ -1,4 +1,4 @@
-package com.skoda.andy.shop.core;
+package com.skoda.dropwizard.shop.core;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

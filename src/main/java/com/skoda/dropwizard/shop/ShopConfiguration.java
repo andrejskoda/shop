@@ -1,4 +1,4 @@
-package com.skoda.andy.shop;
+package com.skoda.dropwizard.shop;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
