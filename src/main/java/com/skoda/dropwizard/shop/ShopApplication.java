@@ -13,6 +13,7 @@ import com.skoda.dropwizard.shop.core.Person;
 import com.skoda.dropwizard.shop.db.PersonDAO;
 import com.skoda.dropwizard.shop.resources.PeopleResource;
 import com.skoda.dropwizard.shop.resources.PersonResource;
+import com.skoda.dropwizard.shop.resources.ViewResource;
 
 public class ShopApplication extends Application<ShopConfiguration> {
 
@@ -39,7 +40,6 @@ public class ShopApplication extends Application<ShopConfiguration> {
         });
         bootstrap.addBundle(hibernateBundle);
         bootstrap.addBundle(new ViewBundle());
-
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class ShopApplication extends Application<ShopConfiguration> {
 		PersonDAO dao = new PersonDAO(hibernateBundle.getSessionFactory());
 		environment.jersey().register(new PeopleResource(dao));
 		environment.jersey().register(new PersonResource(dao));
-
+		environment.jersey().register(new ViewResource());
 	}
 
 }
