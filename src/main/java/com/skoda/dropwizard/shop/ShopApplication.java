@@ -31,7 +31,7 @@ public class ShopApplication extends Application<ShopConfiguration> {
 
 	@Override
 	public void initialize(Bootstrap<ShopConfiguration> bootstrap) {
-        bootstrap.addBundle(new AssetsBundle());
+		bootstrap.addBundle(new AssetsBundle());
         bootstrap.addBundle(new MigrationsBundle<ShopConfiguration>() {
             @Override
             public DataSourceFactory getDataSourceFactory(ShopConfiguration configuration) {
@@ -39,7 +39,8 @@ public class ShopApplication extends Application<ShopConfiguration> {
             }
         });
         bootstrap.addBundle(hibernateBundle);
-        bootstrap.addBundle(new ViewBundle());
+//        bootstrap.addBundle(new ViewBundle());
+        
 	}
 
 	@Override
