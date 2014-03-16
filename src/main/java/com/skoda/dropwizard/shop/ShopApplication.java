@@ -7,7 +7,6 @@ import io.dropwizard.hibernate.HibernateBundle;
 import io.dropwizard.migrations.MigrationsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import io.dropwizard.views.ViewBundle;
 
 import com.skoda.dropwizard.shop.core.Person;
 import com.skoda.dropwizard.shop.db.PersonDAO;

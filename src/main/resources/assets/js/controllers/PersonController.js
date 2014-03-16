@@ -1,21 +1,10 @@
-/**
- * Created by andrej on 3/5/14.
- */
 'use strict';
-var app = angular.module('myApp',[]);
 
-
-app.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.when('/assets/list', {
-        templateUrl: 'assets/list/layout.html',
-        controller: PersonController
-    });
-
-    $routeProvider.otherwise({redirectTo: '/assets/list'});
-}]);
-
-/*
-app.controller('PersonController', function($scope, $http) {
+/**
+ * PersonController
+ * @constructor
+ */
+var PersonController = function($scope, $http) {
 
     $scope.filteredPeople = [];
     $scope.people = [];
@@ -63,5 +52,4 @@ app.controller('PersonController', function($scope, $http) {
 
     $scope.fetchArticlesList();
     $scope.predicate = 'id';
-});
-*/
+}
