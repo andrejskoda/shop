@@ -1,0 +1,33 @@
+	<div class="container" ng-controller="PersonController">
+		<div class="alert alert-error" ng-show="error">{{errorMessage}}</div>
+
+		<h3>People List</h3>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th style="text-align: center; width: 25px;">#</th>
+					<th>Person Name</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="person in filteredPeople">
+					<td>{{person.id}}</td>
+					<td>{{person.fullName}}</td>
+					<td style="width: 100px; text-align: center;">
+						<button class="btn btn-primary" ng-click="viewPerson(person)">
+							<span class="icon-eye-open icon-white"></span> View
+						</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div data-pagination="" data-num-pages="numPages()"
+			data-current-page="currentPage" data-max-size="maxSize"
+			data-boundary-links="true"></div>
+		<div class="well" ng-show="viewMode">
+			<h2 ng-bind="person.id"></h2>
+			<h3 ng-bind="person.fullName"></h3>
+			<p ng-bind="person.jobTitle"></p>
+		</div>
+	</div>
