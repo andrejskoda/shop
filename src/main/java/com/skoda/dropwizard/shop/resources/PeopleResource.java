@@ -17,22 +17,22 @@ import com.skoda.dropwizard.shop.db.PersonDAO;
 @Produces(MediaType.APPLICATION_JSON)
 public class PeopleResource {
 
-    private final PersonDAO peopleDAO;
+    private final PersonDAO personDAO;
 
     public PeopleResource(PersonDAO peopleDAO) {
-        this.peopleDAO = peopleDAO;
+        this.personDAO = peopleDAO;
     }
 
     @POST
     @UnitOfWork
     public Person createPerson(Person person) {
-        return peopleDAO.create(person);
+        return personDAO.create(person);
     }
 
     @GET
     @UnitOfWork
     public List<Person> listPeople() {
-        return peopleDAO.findAll();
+        return personDAO.findAll();
     }
 
 }

@@ -20,6 +20,10 @@ var PersonController = function($scope, $http) {
 
         });
     }
+    
+    $scope.savePerson = function(person) {
+    	
+    }
 
     $scope.viewPerson = function(selectedPerson) {
         $scope.resetError();

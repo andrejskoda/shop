@@ -21,8 +21,6 @@ database:
 #    port: 8080
 
 server:
-#  softNofileLimit: 1000
-#  hardNofileLimit: 1000
   applicationConnectors:
     - type: http
       port: 8080
@@ -31,12 +29,6 @@ server:
       keyStorePath: example.keystore
       keyStorePassword: example
       validateCerts: false
-# this requires the npn-boot library on the JVM's boot classpath
-#    - type: spdy3
-#      port: 8445
-#      keyStorePath: example.keystore
-#      keyStorePassword: example
-#      validateCerts: false
   adminConnectors:
     - type: http
       port: 8081

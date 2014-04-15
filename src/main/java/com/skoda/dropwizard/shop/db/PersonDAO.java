@@ -21,6 +21,10 @@ public class PersonDAO extends AbstractDAO<Person> {
     public Person create(Person person) {
         return persist(person);
     }
+    
+    public Person update(Person person){
+    	return persist(person);
+    }
 
     public List<Person> findAll() {
         return list(namedQuery("com.skoda.dropwizard.shop.core.Person.findAll"));
