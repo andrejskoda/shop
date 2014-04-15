@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="alert alert-error" ng-show="error">{{errorMessage}}</div>
+    <h3>User detail</h3>
+
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputFirstName">User ID:</label>
+
+            <div class="controls">
+                <input type="text" id="inputFirstName" ng-model="user.id"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputLastName">N:</label>
+
+            <div class="controls">
+                <input type="text" id="inputLastName" ng-model="user.fullName"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="cancel()" class="btn btn-small">cancel</a>
+                <a ng-click="updateUser()" class="btn btn-small btn-primary">update user</a>
+            </div>
+        </div>
+    </form>
+</div>
